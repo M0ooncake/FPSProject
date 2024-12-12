@@ -26,7 +26,7 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 	UPROPERTY(EditAnywhere, Category = "Movement")
-	float BulletSpeed = 5000.0f;
+	float BulletSpeed = 9000.0f;
 
 	// Set up the pointer to the class and unreals reflection system
 	UPROPERTY(VisibleDefaultsOnly, Category = "Projectile")

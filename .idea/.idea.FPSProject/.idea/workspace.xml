@@ -10,22 +10,72 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4532b4e6-b698-4a33-8ad5-38f7d10a80d4" name="Changes" comment="" />
+    <list default="true" id="4532b4e6-b698-4a33-8ad5-38f7d10a80d4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FPSProject/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FPSProject/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FPSProject/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FPSProject/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FPSProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FPSProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vsconfig" beforeDir="false" afterPath="$PROJECT_DIR$/.vsconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultEditor.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEditor.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultGame.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultGame.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultInput.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultInput.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprint/BP_FPSProjectGameModeBase.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprint/BP_FPSProjectGameModeBase.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FPSProject.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/FPSProject.uproject" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FPSProject.Target.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSProject.Target.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FPSProject/FPSCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSProject/FPSCharacter.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FPSProject/FPSCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSProject/FPSCharacter.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FPSProject/FPSProject.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSProject/FPSProject.Build.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FPSProject/FPSProject.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSProject/FPSProject.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FPSProject/FPSProject.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSProject/FPSProject.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FPSProject/FPSProjectGameModeBase.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSProject/FPSProjectGameModeBase.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FPSProject/FPSProjectGameModeBase.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSProject/FPSProjectGameModeBase.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FPSProject/Private/Collectables/Coin.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSProject/Private/Collectables/Coin.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FPSProject/Private/Collectables/Collectable.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSProject/Private/Collectables/Collectable.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FPSProject/Private/Enemy/BTT_Attack.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSProject/Private/Enemy/BTT_Attack.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FPSProject/Private/Enemy/BTT_GetRandomLocation.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSProject/Private/Enemy/BTT_GetRandomLocation.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FPSProject/Private/Enemy/EnemyAICharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSProject/Private/Enemy/EnemyAICharacter.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FPSProject/Private/Enemy/EnemyAIController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSProject/Private/Enemy/EnemyAIController.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FPSProject/Private/FPSProjectile.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSProject/Private/FPSProjectile.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FPSProject/Private/GUI/ButtonUserWidget.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSProject/Private/GUI/ButtonUserWidget.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FPSProject/Private/GUI/FPSUserWidget.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSProject/Private/GUI/FPSUserWidget.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FPSProject/Private/GUI/Slate/SGameOverWidget.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSProject/Private/GUI/Slate/SGameOverWidget.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FPSProject/Private/GUI/Slate/SSettingsWIdget.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSProject/Private/GUI/Slate/SSettingsWIdget.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FPSProject/Private/HUD/FPSHUD.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSProject/Private/HUD/FPSHUD.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FPSProject/Public/Collectables/Coin.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSProject/Public/Collectables/Coin.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FPSProject/Public/Collectables/Collectable.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSProject/Public/Collectables/Collectable.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FPSProject/Public/Enemy/BTT_Attack.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSProject/Public/Enemy/BTT_Attack.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FPSProject/Public/Enemy/BTT_GetRandomLocation.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSProject/Public/Enemy/BTT_GetRandomLocation.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FPSProject/Public/Enemy/EnemyAICharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSProject/Public/Enemy/EnemyAICharacter.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FPSProject/Public/Enemy/EnemyAIController.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSProject/Public/Enemy/EnemyAIController.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FPSProject/Public/FPSProjectile.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSProject/Public/FPSProjectile.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FPSProject/Public/GUI/ButtonUserWidget.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSProject/Public/GUI/ButtonUserWidget.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FPSProject/Public/GUI/FPSUserWidget.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSProject/Public/GUI/FPSUserWidget.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FPSProject/Public/GUI/Slate/SGameOverWidget.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSProject/Public/GUI/Slate/SGameOverWidget.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FPSProject/Public/GUI/Slate/SSettingsWIdget.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSProject/Public/GUI/Slate/SSettingsWIdget.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FPSProject/Public/HUD/FPSHUD.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSProject/Public/HUD/FPSHUD.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FPSProjectEditor.Target.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSProjectEditor.Target.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Source/FPSProject/Private/Collectables/Coin.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/FPSProject/Private/Collectables/Collectable.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/FPSProject/Private/Enemy/BTT_GetRandomLocation.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/FPSProject/Private/GUI/FPSUserWidget.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/FPSProject/Private/GUI/Slate/SGameModeSelectWidget.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/FPSProject/Public/Collectables/Coin.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/FPSProject/Public/Collectables/Collectable.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/FPSProject/Public/Enemy/BTT_GetRandomLocation.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/FPSProject/Public/GUI/ButtonUserWidget.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/FPSProject/Public/GUI/FPSUserWidget.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/FPSProject/Public/GUI/Slate/SGameModeSelectWidget.h" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -45,6 +95,7 @@
     &quot;Notification.DisplayName-DoNotAsk-Rider&quot;: &quot;Rider&quot;,
     &quot;Notification.DoNotAsk-Rider&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -225,6 +276,11 @@
       <workItem from="1732745531968" duration="1057000" />
       <workItem from="1733329028114" duration="4158000" />
       <workItem from="1733349858326" duration="7825000" />
+      <workItem from="1733954468083" duration="30000" />
+      <workItem from="1733954712149" duration="228000" />
+      <workItem from="1733955674604" duration="45000" />
+      <workItem from="1733955737414" duration="7319000" />
+      <workItem from="1733963157767" duration="2435000" />
     </task>
     <servers />
   </component>

@@ -120,7 +120,8 @@ void AFPSCharacter::StartFiring()
     FVector MuzzleLocation = CameraLocation + FTransform(CameraRotation).TransformVector(MuzzleOffset);
 
     FRotator MuzzleRotation = CameraRotation;
-    //MuzzleRotation.Pitch += 10.0f;
+    MuzzleRotation.Pitch += 1.3f; //	Value derived from testing in game
+	MuzzleRotation.Yaw -= 1.0f;	  //	Value derived from testing in game
 
     // Unity Instantiate
     // 1. Get World we to spawn in

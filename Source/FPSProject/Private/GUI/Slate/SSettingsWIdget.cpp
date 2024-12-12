@@ -4,20 +4,25 @@
 #include "GUI/Slate/SSettingsWIdget.h"
 
 
+#include "AITestsCommon.h"
 #include "SlateOptMacros.h"
+#include "FPSProject/FPSProjectGameModeBase.h"
+#include "Kismet/GameplayStatics.h"
 
 BEGIN_SLATE_FUNCTION_BUILD_OPTIMIZATION
+
 void SSettingsWIdget::Construct(const FArguments& InArgs)
 {
 	bCanSupportFocus = true;
 	OwningHUD = InArgs._OwningHUD;
-
+	FPSGameMode = InArgs._FPSGameMode;
+	
 	const FMargin ContentPadding = FMargin(500.0f, 300.0f);
     const FMargin ButtonPadding = FMargin(10.0f);
 	
     const FText  TitleText = FText::FromString("Main Menu");
     const FText  ResumeText = FText::FromString("Begin Game");
-    const FText  SoundText = FText::FromString("Sound");
+    GameModeText = FText::FromString("Game Mode: ");
     const FText  QuitText = FText::FromString("Quit");
 	
     FSlateFontInfo TitleTextStyle = FCoreStyle::Get().GetFontStyle("EmbassedText");
@@ -63,7 +68,7 @@ void SSettingsWIdget::Construct(const FArguments& InArgs)
         			.Justification(ETextJustify::Center)
         		]
         	]
-        	// Sound Button
+        	// GameMode Button
         	+ SVerticalBox::Slot()
         	.Padding(ButtonPadding)
 	        
@@ -71,9 +76,9 @@ void SSettingsWIdget::Construct(const FArguments& InArgs)
         		SNew(SButton)
         		.OnClicked(this, &SSettingsWIdget::OnSoundClicked)
         		[
-        			SNew(STextBlock)
+        			SAssignNew(GameModeTextBlock,STextBlock)
         			.Font(ButtonTextStyle)
-        			.Text(SoundText)
+        			.Text(GameModeText)
         			.Justification(ETextJustify::Center)
         		]
         	]
@@ -92,12 +97,18 @@ void SSettingsWIdget::Construct(const FArguments& InArgs)
         	]
         ]
 	];
-	
+	OnSoundClicked();
 }
 
 FReply SSettingsWIdget::OnResumeClicked() const
 {
-	OwningHUD->gameWidgetContainer->StartTimer();
+	
+	
+
+	
+	//if (!FPSGameMode.IsValid()) return FReply::Handled();
+	FPSGameMode->StartTimer();
+	//OwningHUD->gameWidgetContainer->StartTimer();
 	if (OwningHUD.IsValid())
 	{
 		OwningHUD->RemoveSettingsMenu();
@@ -105,8 +116,20 @@ FReply SSettingsWIdget::OnResumeClicked() const
 	return FReply::Handled();
 }
 
-FReply SSettingsWIdget::OnSoundClicked() const
+FReply SSettingsWIdget::OnSoundClicked()	// GameMode Really. Not sound anymore.
 {
+	ToggleGameState = !ToggleGameState; //	Flip flop between being true and false
+	switch (ToggleGameState)
+	{
+	case true:
+		GameModeText = FText::FromString("Game Mode: Countdown");
+		GameModeTextBlock->SetText(GameModeText);
+		break;
+	case false:
+		GameModeText = FText::FromString("Game Mode: CountUp");
+		GameModeTextBlock->SetText(GameModeText);
+	}
+	
 	return FReply::Handled();
 }
 
@@ -121,5 +144,6 @@ FReply SSettingsWIdget::OnQuitClickeded() const
 	}
 	return FReply::Handled();
 }
+
 
 END_SLATE_FUNCTION_BUILD_OPTIMIZATION

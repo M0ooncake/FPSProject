@@ -39,9 +39,12 @@ void AFPSHUD::ShowSettingsMenu()
 {	
 	if(GEngine && GEngine->GameViewport)
 	{
-		SettingsWIdget = SNew(SSettingsWIdget).OwningHUD(this);
+		
+		SettingsWIdget = SNew(SSettingsWIdget).OwningHUD(this).FPSGameMode(Cast<AFPSProjectGameModeBase>(UGameplayStatics::GetGameMode(this)));
+
+		
 		GEngine->GameViewport->AddViewportWidgetContent(SAssignNew(
-			settingsWidgetContainer, SWeakWidget).PossiblyNullContent(SettingsWIdget.ToSharedRef()));
+			settingsWidgetContainer, SWeakWidget).PossiblyNullContent(SettingsWIdget.ToSharedRef()) );
 	}
 
 	if (PlayerOwner)

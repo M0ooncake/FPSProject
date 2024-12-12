@@ -23,7 +23,6 @@ void UFPSUserWidget::NativeConstruct()
 		{
 			UUserWidget* widget = CreateWidget(this, ButtonWidgetPrefab);
 			ButtonContainer->AddChildToVerticalBox(widget);
-
 			UButtonUserWidget* button = Cast<UButtonUserWidget>(widget); // basically like getComponent in unity
 			button->SetText(i);
 			
@@ -32,7 +31,7 @@ void UFPSUserWidget::NativeConstruct()
 	
 }
 
-void UFPSUserWidget::Timer()
+void UFPSUserWidget::Timer()	
 {
 	
 	// Decrease the remaining time
