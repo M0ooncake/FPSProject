@@ -40,7 +40,9 @@ void AFPSHUD::ShowSettingsMenu()
 	if(GEngine && GEngine->GameViewport)
 	{
 		
-		SettingsWIdget = SNew(SSettingsWIdget).OwningHUD(this).FPSGameMode(Cast<AFPSProjectGameModeBase>(UGameplayStatics::GetGameMode(this)));
+		SettingsWIdget = SNew(SSettingsWIdget).OwningHUD(this).FPSGameMode(
+			Cast<AFPSProjectGameModeBase>(UGameplayStatics::GetGameMode(this))).FPSGameModeCountDown(
+				Cast<AFPSGameModeCountDown>(UGameplayStatics::GetGameMode(this)));
 
 		
 		GEngine->GameViewport->AddViewportWidgetContent(SAssignNew(

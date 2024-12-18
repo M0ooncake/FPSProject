@@ -14,13 +14,17 @@
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FPSProject/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FPSProject/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FPSProject/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FPSProject/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FPSProject/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FPSProject/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FPSProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FPSProject/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vsconfig" beforeDir="false" afterPath="$PROJECT_DIR$/.vsconfig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Config/DefaultEditor.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEditor.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Config/DefaultGame.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultGame.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Config/DefaultInput.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultInput.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprint/BP_FPSProjectGameModeBase.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprint/BP_FPSProjectGameModeBase.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprint/Collectable/BP_Coin.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprint/Collectable/BP_Coin.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprint/GUI/BP_FPSUserWidget.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprint/GUI/BP_FPSUserWidget.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/FPSMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/FPSMap.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Materials/M_Projectile.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Materials/M_Projectile.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FPSProject.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/FPSProject.uproject" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/FPSProject.Target.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSProject.Target.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/FPSProject/FPSCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSProject/FPSCharacter.cpp" afterDir="false" />
@@ -39,6 +43,7 @@
       <change beforePath="$PROJECT_DIR$/Source/FPSProject/Private/FPSProjectile.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSProject/Private/FPSProjectile.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/FPSProject/Private/GUI/ButtonUserWidget.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSProject/Private/GUI/ButtonUserWidget.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/FPSProject/Private/GUI/FPSUserWidget.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSProject/Private/GUI/FPSUserWidget.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FPSProject/Private/GUI/Slate/SGameModeSelectWidget.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSProject/Private/GUI/Slate/SGameModeSelectWidget.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/FPSProject/Private/GUI/Slate/SGameOverWidget.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSProject/Private/GUI/Slate/SGameOverWidget.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/FPSProject/Private/GUI/Slate/SSettingsWIdget.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSProject/Private/GUI/Slate/SSettingsWIdget.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/FPSProject/Private/HUD/FPSHUD.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSProject/Private/HUD/FPSHUD.cpp" afterDir="false" />
@@ -51,6 +56,7 @@
       <change beforePath="$PROJECT_DIR$/Source/FPSProject/Public/FPSProjectile.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSProject/Public/FPSProjectile.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/FPSProject/Public/GUI/ButtonUserWidget.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSProject/Public/GUI/ButtonUserWidget.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/FPSProject/Public/GUI/FPSUserWidget.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSProject/Public/GUI/FPSUserWidget.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FPSProject/Public/GUI/Slate/SGameModeSelectWidget.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSProject/Public/GUI/Slate/SGameModeSelectWidget.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/FPSProject/Public/GUI/Slate/SGameOverWidget.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSProject/Public/GUI/Slate/SGameOverWidget.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/FPSProject/Public/GUI/Slate/SSettingsWIdget.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSProject/Public/GUI/Slate/SSettingsWIdget.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/FPSProject/Public/HUD/FPSHUD.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSProject/Public/HUD/FPSHUD.h" afterDir="false" />
@@ -281,6 +287,10 @@
       <workItem from="1733955674604" duration="45000" />
       <workItem from="1733955737414" duration="7319000" />
       <workItem from="1733963157767" duration="2435000" />
+      <workItem from="1734451615281" duration="24000" />
+      <workItem from="1734555048575" duration="503000" />
+      <workItem from="1734555591328" duration="1730000" />
+      <workItem from="1734558552373" duration="4536000" />
     </task>
     <servers />
   </component>

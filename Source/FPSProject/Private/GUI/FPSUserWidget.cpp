@@ -31,7 +31,7 @@ void UFPSUserWidget::NativeConstruct()
 	
 }
 
-void UFPSUserWidget::Timer()	
+void UFPSUserWidget::Timers()	
 {
 	
 	// Decrease the remaining time
@@ -62,7 +62,7 @@ void UFPSUserWidget::UpdateTimerText()
 }
 void UFPSUserWidget::StartTimer()
 {
-	GetWorld()->GetTimerManager().SetTimer(TimerHandle, this, &UFPSUserWidget::Timer, 1.0f, true);
+	//GetWorld()->GetTimerManager().SetTimer(TimerHandle, this, &UFPSUserWidget::Timer, 1.0f, true);
 }
 void UFPSUserWidget::SetHealthBar(float percentage)
 {

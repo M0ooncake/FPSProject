@@ -51,7 +51,7 @@ public:
 	virtual void NativeConstruct() override;
 
 	UFUNCTION()
-	void Timer();
+	void Timers();
 
 	UFUNCTION()
 	void UpdateTimerText();

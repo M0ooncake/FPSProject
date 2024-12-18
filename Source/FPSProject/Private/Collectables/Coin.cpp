@@ -12,8 +12,7 @@ ACoin::ACoin()
 		CoinMeshComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("CoinMesh"));
 		CoinMeshComponent->SetupAttachment(CollisionComponent);
 	}
-
-
+	
 }
 
 void ACoin::BeginPlay()
@@ -71,7 +70,26 @@ FVector ACoin::GetRandomLocationInRange()
 	float RandomY = FMath::RandRange(-240.0f, -770.0f); // Y range remains as defined earlier
 	float RandomZ = FMath::RandRange(70.0f, 600.0f); // Random Z value between 70 and 600
 
+	int ChanceToBeHostage = FMath::RandRange(0 ,4);	//	25% chance to be a hostage
+
+	if(ChanceToBeHostage == 4)
+	{
+		SwapTextures();
+	}
+	
 	// Create and return the new location vector
 	return FVector(RandomX, RandomY, RandomZ);
 }
+
+
+void ACoin::SwapTextures()
+{
+	
+	// not sure exactly what to do in here right now
+
+	
+}
+
+
+
 

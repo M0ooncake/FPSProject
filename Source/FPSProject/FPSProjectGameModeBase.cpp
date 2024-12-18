@@ -15,7 +15,7 @@ void AFPSProjectGameModeBase::StartPlay()
 	// we want to display a debug message for 5 seconds
 	// The -1 "Key" value argument prevents the message from being updated or refreshed.
 	GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Silver, TEXT("Hello you son of a &**&#. Get to work"));
-	AFPSHUD* HUD = UGameplayStatics::GetPlayerController(this, 0)->GetHUD<AFPSHUD>();
+	
 	
 }
 
@@ -40,6 +40,27 @@ void AFPSProjectGameModeBase::Timer()
 	}
 }
 
+void AFPSProjectGameModeBase::StopWatch()
+{
+	// Decrease the remaining time
+	RemainingTime++;
+
+	// Update the timer text
+	UpdateStopWatchText();
+
+	// Check if time is up
+	if (RemainingTime >= 15)
+	{
+		// Stop the timer
+		GetWorld()->GetTimerManager().ClearTimer(TimerHandle);
+
+		// End the game... But how? Something along the lines of popping a menu on to screen.
+		AFPSHUD* HUD = UGameplayStatics::GetPlayerController(this, 0)->GetHUD<AFPSHUD>();
+		if(!HUD) return; // If HUD has not been gotten, stop executing code to avoid crashing
+		HUD->ShowGameOver();
+	}
+}
+
 void AFPSProjectGameModeBase::UpdateTimerText()
 {
 	AFPSHUD* HUD = UGameplayStatics::GetPlayerController(this, 0)->GetHUD<AFPSHUD>();
@@ -48,8 +69,23 @@ void AFPSProjectGameModeBase::UpdateTimerText()
 	
 }
 
+void AFPSProjectGameModeBase::UpdateStopWatchText()
+{
+	AFPSHUD* HUD = UGameplayStatics::GetPlayerController(this, 0)->GetHUD<AFPSHUD>();
+	if(!HUD) return; // If HUD has not been gotten, stop executing code to avoid crashing
+	HUD->gameWidgetContainer->TimerText->SetText(FText::FromString(FString::Printf(TEXT("Current Time: %d"), RemainingTime)));
+	
+}
+
 void AFPSProjectGameModeBase::StartTimer()
 {
 
 	GetWorld()->GetTimerManager().SetTimer(TimerHandle, this, &AFPSProjectGameModeBase::Timer, 1.0f, true);
+}
+
+void AFPSProjectGameModeBase::StartStopWatch()
+{
+	RemainingTime = 0;
+	UpdateStopWatchText();
+	GetWorld()->GetTimerManager().SetTimer(TimerHandle, this, &AFPSProjectGameModeBase::StopWatch, 1.0f, true);
 }

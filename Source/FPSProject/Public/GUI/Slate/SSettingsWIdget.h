@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "FPSProject/FPSProjectGameModeBase.h"
+#include "FPSGameModeCountDown.h"
 #include "HUD/FPSHUD.h"
 #include "Widgets/SCompoundWidget.h"
 
@@ -18,6 +19,7 @@ public:
 	{}
 		SLATE_ARGUMENT(TWeakObjectPtr<class AFPSHUD>, OwningHUD)
 		SLATE_ARGUMENT(TWeakObjectPtr<class AFPSProjectGameModeBase>, FPSGameMode)
+		SLATE_ARGUMENT(TWeakObjectPtr<class AFPSGameModeCountDown>, FPSGameModeCountDown)
 	SLATE_END_ARGS()
 
 	/** Constructs this widget with InArgs */
@@ -25,13 +27,14 @@ public:
 
 	TWeakObjectPtr<class AFPSHUD> OwningHUD;
 	TWeakObjectPtr<class AFPSProjectGameModeBase> FPSGameMode;
+	TWeakObjectPtr<class AFPSGameModeCountDown> FPSGameModeCountDown;
 	
 	FText  GameModeText = FText::FromString("Game Mode: ");	// Why does the system think its a const: Got finally
 	TSharedPtr<STextBlock> GameModeTextBlock;	// Allows for setting text dynamically for the button
 	
-	bool ToggleGameState = true;
-	FReply OnResumeClicked() const;
+	bool ToggleGameState = false;
 	FReply OnSoundClicked();
+	FReply OnResumeClicked() const;
 	FReply OnQuitClickeded() const;
 	
 };

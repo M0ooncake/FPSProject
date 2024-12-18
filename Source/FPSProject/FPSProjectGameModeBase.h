@@ -29,9 +29,19 @@ public:
 	
 	UFUNCTION()
 	void Timer();
+
+	UFUNCTION()
+	void StopWatch();
 	
 	UFUNCTION()
 	void UpdateTimerText();
-	
+
+	UFUNCTION()
+	void UpdateStopWatchText();
+
+	UFUNCTION()
 	void StartTimer();
+	
+	UFUNCTION()
+	void StartStopWatch();
 };

@@ -16,6 +16,7 @@ void SSettingsWIdget::Construct(const FArguments& InArgs)
 	bCanSupportFocus = true;
 	OwningHUD = InArgs._OwningHUD;
 	FPSGameMode = InArgs._FPSGameMode;
+	FPSGameModeCountDown = InArgs._FPSGameModeCountDown;
 	
 	const FMargin ContentPadding = FMargin(500.0f, 300.0f);
     const FMargin ButtonPadding = FMargin(10.0f);
@@ -100,21 +101,6 @@ void SSettingsWIdget::Construct(const FArguments& InArgs)
 	OnSoundClicked();
 }
 
-FReply SSettingsWIdget::OnResumeClicked() const
-{
-	
-	
-
-	
-	//if (!FPSGameMode.IsValid()) return FReply::Handled();
-	FPSGameMode->StartTimer();
-	//OwningHUD->gameWidgetContainer->StartTimer();
-	if (OwningHUD.IsValid())
-	{
-		OwningHUD->RemoveSettingsMenu();
-	}
-	return FReply::Handled();
-}
 
 FReply SSettingsWIdget::OnSoundClicked()	// GameMode Really. Not sound anymore.
 {
@@ -130,6 +116,30 @@ FReply SSettingsWIdget::OnSoundClicked()	// GameMode Really. Not sound anymore.
 		GameModeTextBlock->SetText(GameModeText);
 	}
 	
+	return FReply::Handled();
+}
+FReply SSettingsWIdget::OnResumeClicked() const
+{
+	
+	switch (ToggleGameState)
+	{
+	case true:
+		FPSGameMode->StartTimer();
+		
+		break;
+	case false:
+		// I think we need to change the gamemode somehow
+		FPSGameMode->StartStopWatch();
+	}
+
+	
+	//if (!FPSGameMode.IsValid()) return FReply::Handled();
+	
+	//OwningHUD->gameWidgetContainer->StartTimer();
+	if (OwningHUD.IsValid())
+	{
+		OwningHUD->RemoveSettingsMenu();
+	}
 	return FReply::Handled();
 }
 
